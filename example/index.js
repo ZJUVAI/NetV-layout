@@ -44,6 +44,7 @@ function randomLayout() {
     })
     layout.onTick(() => {
         console.log('iteration...')
+        netv.draw()
     })
     layout.onStop(() => {
         console.log('random layout done')
@@ -55,5 +56,8 @@ function randomLayout() {
 }
 function forceLayout() {
     const layout = new D3ForceLayout(netv)
+    layout.onTick(() => {
+        netv.draw()
+    })
     layout.start()
 }

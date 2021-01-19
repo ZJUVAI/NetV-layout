@@ -112,7 +112,7 @@ class RandomLayout extends Layout {
             n.x(this.currentPositions[i].x)
             n.y(this.currentPositions[i].y)
         })
-        this.netv.draw()
+        // this.netv.draw()
     }
 }
 

@@ -39,7 +39,6 @@ class D3ForceLayout extends Layout {
                 node.y(n.y)
             })
 
-            this.netv.draw()
             this.tickCallback && this.tickCallback()
         })
         this.startCallback && this.startCallback()
@@ -49,10 +48,6 @@ class D3ForceLayout extends Layout {
     stop() {
         this.simulation.stop()
         this.stopCallback && this.stopCallback()
-    }
-
-    finish() {
-        // TODO
     }
 }
 
