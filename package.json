@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/ZJUVAG/NetV-layout/issues"
   },
-  "homepage": "https://github.com/ZJUVAG/NetV-layout#readme"
+  "homepage": "https://github.com/ZJUVAG/NetV-layout#readme",
+  "dependencies": {
+    "d3-force": "^2.1.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.15.0",
+    "webpack-cli": "^4.3.1"
+  }
 }
