@@ -5,5 +5,6 @@
 
 import { RandomLayout } from './layouts/random'
 import { D3ForceLayout } from './layouts/d3-force'
+import { RadialTree } from './layouts/radial-tree'
 
-export { RandomLayout, D3ForceLayout }
+export { RandomLayout, D3ForceLayout, RadialTree }
