@@ -27,6 +27,19 @@ miserables.nodes.forEach((node) => {
     node.y = Math.random() * 500 + 50
 })
 
+netv.data(miserables)
+
+const fm3Layout = new FM3Layout(netv)
+
+fm3Layout.onTick(() => {
+    netv.draw()
+})
+
+
+fm3Layout.start()
+
+
+/*
 initOGDF().then(function (Module) {
     const graph = miserables
     dic = {}
@@ -59,6 +72,7 @@ initOGDF().then(function (Module) {
     netv.data(graph)
     netv.draw()
 })
+*/
 
 // netv.data(miserables)
 // netv.draw()

@@ -9,10 +9,12 @@ console.log(initOGDF)
 import { RandomLayout } from './layouts/random'
 import { D3ForceLayout } from './layouts/d3-force'
 import { RadialTree } from './layouts/radial-tree'
+import { FM3Layout } from './layouts/fm3'
 
 export {
     RandomLayout,
     D3ForceLayout,
     RadialTree,
-    initOGDF
+    FM3Layout,
+    initOGDF,
 }
