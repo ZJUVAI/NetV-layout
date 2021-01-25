@@ -5,6 +5,7 @@
 
 import { Layout } from './layout'
 import { lerpPosition } from '../utils'
+import * as initOGDF from 'ogdf-js'
 
 class FM3Layout extends Layout {
     // private _time: number
@@ -45,10 +46,10 @@ class FM3Layout extends Layout {
                     Module.HEAP32[source / 4 + i] = dic[graph.links[i].source]; Module.HEAP32[target / 4 + i] = dic[graph.links[i].target];
                 }
                 console.log(nodes, links)
-                console.time("sort");
+                // console.time("sort");
                 let result = Module._FM3(nodes, links, source, target);
-                console.timeEnd("sort");
-                console.log('complete layout')
+                // console.timeEnd("sort");
+                // console.log('complete layout')
                 for (let i = 0; i < nodes; ++i) {
                     graph.nodes[i]['x'] = Module.HEAPF32[(result >> 2) + i * 2]
                     graph.nodes[i]['y'] = Module.HEAPF32[(result >> 2) + i * 2 + 1];
@@ -61,7 +62,7 @@ class FM3Layout extends Layout {
             })
             .then((graph) => {
                 this.targetPositions = graph.nodes.map((n) => ({ x: n.x, y: n.y }))
-                console.log(graph)
+                // console.log(graph)
 
 
                 let start = undefined
