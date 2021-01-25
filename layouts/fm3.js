@@ -45,7 +45,7 @@ class FM3Layout extends Layout {
                 for (let i = 0; i < links; ++i) {
                     Module.HEAP32[source / 4 + i] = dic[graph.links[i].source]; Module.HEAP32[target / 4 + i] = dic[graph.links[i].target];
                 }
-                console.log(nodes, links)
+                // console.log(nodes, links)
                 // console.time("sort");
                 let result = Module._FM3(nodes, links, source, target);
                 // console.timeEnd("sort");
