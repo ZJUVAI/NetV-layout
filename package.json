@@ -20,7 +20,8 @@
   "homepage": "https://github.com/ZJUVAG/NetV-layout#readme",
   "dependencies": {
     "d3": "^6.3.1",
-    "d3-force": "^2.1.1"
+    "d3-force": "^2.1.1",
+    "ogdf-js": "file:../ogdf.js"
   },
   "devDependencies": {
     "webpack": "^5.15.0",

@@ -9,4 +9,11 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         libraryTarget: 'umd',
     },
+    resolve: {
+        fallback: {
+            path: false,
+            crypto: false,
+            fs: false,
+        }
+    }
 };
